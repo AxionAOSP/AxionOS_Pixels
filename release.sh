@@ -1,9 +1,14 @@
 #!/bin/bash
 
 REPO="AxionAOSP/AxionOS_Pixels"
+
 read -p "Enter tag name (e.g., 1.2): " TAG_NAME
 RELEASE_NAME="Version $TAG_NAME"
-RELEASE_BODY="$(date '+%B %Y') Security Update"
+
+read -p "Enter release body (leave empty to use default): " RELEASE_BODY
+if [ -z "$RELEASE_BODY" ]; then
+    RELEASE_BODY="$(date '+%B %Y') Security Update"
+fi
 
 echo "Creating or updating GitHub release..."
 if ! gh release view "$TAG_NAME" --repo "$REPO" &>/dev/null; then
