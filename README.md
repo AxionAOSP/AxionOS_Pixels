@@ -2,8 +2,9 @@
 
 [![Total Download](https://img.shields.io/github/downloads/AxionAOSP/AxionOS_Pixels/total?label=Total%20Downloads)](https://github.com/AxionAOSP/AxionOS_Pixels/releases)  
 
-## AxionOS Pixel Releases
-AxionAOSP builds for Google Pixel devices.
+## AxionOS Pixel Releases  
+Official **AxionAOSP** builds for Google Pixel devices.
+💬 Join the community: [Discord Support Group](https://discord.gg/345jEyfr)
 
 ---
 
